@@ -1,0 +1,74 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+}
+.tableCaption{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 0.5px solid grey;
+}
+.tableCaption p {
+    color: grey;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-1 {
+    width: 70%;
+}
+.row-2 {
+    width: 30%;
+}
+
+.rowEventType{
+    width: 40%;
+}
+.rowDetails{
+    width: 60%;
+}
+.rowCode{
+    width: 70%;
+}
+
+.rowDate{
+    width: 40%;
+    text-align: left;
+}
+
+.tableValue{
+    display: flex;
+    flex-direction: column;
+}
+
+.valuesRow{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+
+@media screen and (max-width: 426px) {
+    .rows{
+        flex-direction: column;
+    }
+
+    .row-2{
+        flex-direction: column-reverse;
+    }
+    .rowCode {
+        width: 100%;
+        color: #bdbdbd;
+    }
+    .rowDate{
+        width: 100%;
+    }
+}
